@@ -1,0 +1,901 @@
+# EESchema Netlist Version 1.1 created  6. 3. 2013 22:49:21
+(
+ ( /512FC39E AVR-ISP-6  CON101 AVR-ISP-6 {Lib=AVR-ISP-6}
+  (    1 /E )
+  (    2 +5V )
+  (    3 /F )
+  (    4 /D )
+  (    5 /reset )
+  (    6 GND )
+ )
+ ( /512FC29A $noname  C105 12p {Lib=C}
+  (    1 /xtal1 )
+  (    2 GND )
+ )
+ ( /512FC297 $noname  C104 12p {Lib=C}
+  (    1 /xtal2 )
+  (    2 GND )
+ )
+ ( /512FC26D $noname  X101 QUARTZCMS4 {Lib=QUARTZCMS4}
+  (    1 /xtal2 )
+  (    3 /xtal1 )
+ )
+ ( /512FBBA0 $noname  R121 680k {Lib=R}
+  (    1 /optLINERX )
+  (    2 /ref )
+ )
+ ( /512EFECC $noname  C121 12p {Lib=C}
+  (    1 /optLINERX )
+  (    2 N-000059 )
+ )
+ ( /512EFEC3 $noname  C122 10p {Lib=C}
+  (    1 N-000059 )
+  (    2 GND )
+ )
+ ( /512FB66A $noname  L102 100u {Lib=INDUCTOR}
+  (    1 /optPWM )
+  (    2 N-000012 )
+ )
+ ( /512FB669 $noname  C123 68n {Lib=C}
+  (    1 N-000012 )
+  (    2 GND )
+ )
+ ( /512FB668 $noname  L103 100u {Lib=INDUCTOR}
+  (    1 N-000012 )
+  (    2 N-000052 )
+ )
+ ( /512FB667 $noname  C124 33n {Lib=C}
+  (    1 N-000052 )
+  (    2 GND )
+ )
+ ( /512E8C00 $noname  R103 100 {Lib=R}
+  (    1 +24V )
+  (    2 N-000022 )
+ )
+ ( /512E8AE6 $noname  R113 47 {Lib=R}
+  (    1 /G )
+  (    2 N-000024 )
+ )
+ ( /512E8AE3 $noname  R114 150 {Lib=R}
+  (    1 /DP )
+  (    2 N-000050 )
+ )
+ ( /512E8ADF $noname  R112 47 {Lib=R}
+  (    1 /F )
+  (    2 N-000023 )
+ )
+ ( /512E8ADC $noname  R111 47 {Lib=R}
+  (    1 /E )
+  (    2 N-000047 )
+ )
+ ( /512E8AD8 $noname  R110 47 {Lib=R}
+  (    1 /D )
+  (    2 N-000045 )
+ )
+ ( /512E8AD6 $noname  R109 47 {Lib=R}
+  (    1 /C )
+  (    2 N-000049 )
+ )
+ ( /512E8ACF $noname  R108 47 {Lib=R}
+  (    1 /B )
+  (    2 N-000051 )
+ )
+ ( /512E8AC7 $noname  R107 47 {Lib=R}
+  (    1 /A )
+  (    2 N-000039 )
+ )
+ ( /512E8A4A $noname  R117 10k {Lib=R}
+  (    1 GND )
+  (    2 ? )
+ )
+ ( /512E8A3D $noname  R116 10k {Lib=R}
+  (    1 GND )
+  (    2 ? )
+ )
+ ( /512E8A2D $noname  R115 10k {Lib=R}
+  (    1 GND )
+  (    2 ? )
+ )
+ ( /512E8460 $noname  C109 1u {Lib=C}
+  (    1 /ref )
+  (    2 GND )
+ )
+ ( /512E8448 $noname  C110 100n {Lib=C}
+  (    1 /ref )
+  (    2 GND )
+ )
+ ( /512D3F95 $noname  R119 160k {Lib=R}
+  (    1 N-000005 )
+  (    2 +5V )
+ )
+ ( /512D3E8C $noname  C120 10u {Lib=CAPAPOL}
+  (    1 +24V )
+  (    2 N-000002 )
+ )
+ ( /512D1B8F $noname  C111 100n {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /512D1B5F $noname  R120 160k {Lib=R}
+  (    1 GND )
+  (    2 N-000005 )
+ )
+ ( /512BF4D2 $noname  U103 OPA690 {Lib=OPA690}
+  (    2 N-000002 )
+  (    3 N-000005 )
+  (    4 GND )
+  (    6 N-000002 )
+  (    7 +5V )
+  (    8 /dis )
+ )
+ ( /512A7B08 $noname  Q103 MOSFET_N {Lib=MOSFET_N}
+  (    D N-000057 )
+  (    G /seg2 )
+  (    S GND )
+ )
+ ( /512A7B05 $noname  Q102 MOSFET_N {Lib=MOSFET_N}
+  (    D N-000046 )
+  (    G /seg1 )
+  (    S GND )
+ )
+ ( /512A7AF4 $noname  Q101 MOSFET_N {Lib=MOSFET_N}
+  (    D N-000048 )
+  (    G /seg0 )
+  (    S GND )
+ )
+ ( /512A7753 $noname  C113 2u2 {Lib=C}
+  (    1 N-000052 )
+  (    2 N-000005 )
+ )
+ ( /512A774F $noname  C112 2n2 {Lib=C}
+  (    1 N-000059 )
+  (    2 +24V )
+ )
+ ( /512A75CB $noname  C116 1u {Lib=C}
+  (    1 N-000009 )
+  (    2 GND )
+ )
+ ( /512A75B6 $noname  C117 1u {Lib=C}
+  (    1 N-000053 )
+  (    2 GND )
+ )
+ ( /512A7510 $noname  C119 100n {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /512A73FC $noname  C106 100n {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /512A73F9 $noname  C107 100n {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /512A73F4 $noname  C108 100n {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /512A7366 $noname  R118 10k {Lib=R}
+  (    1 N-000055 )
+  (    2 +5V )
+ )
+ ( /512A730A $noname  C114 10u {Lib=CAPAPOL}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /512A72F2 $noname  C115 100n {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /512A72C8 $noname  C118 680p {Lib=C}
+  (    1 N-000054 )
+  (    2 GND )
+ )
+ ( /512A7072 $noname  U102 AD5700 {Lib=AD5700}
+  (    1 N-000055 )
+  (    2 ? )
+  (    3 GND )
+  (    4 N-000055 )
+  (    5 /hart_reset )
+  (    6 /cd )
+  (    7 /txd )
+  (    8 /~rts )
+  (    9 GND )
+  (   10 /rxd )
+  (   11 +5V )
+  (   12 GND )
+  (   13 N-000009 )
+  (   14 N-000052 )
+  (   15 N-000053 )
+  (   17 N-000054 )
+  (   18 +5V )
+  (   19 GND )
+  (   20 ? )
+  (   21 GND )
+  (   22 GND )
+  (   23 N-000055 )
+  (   24 N-000055 )
+  (    ~ N-000059 )
+ )
+ ( /51293CB2 $noname  S103 7SEGM {Lib=7SEGM}
+  (    1 N-000047 )
+  (    2 N-000045 )
+  (    3 N-000057 )
+  (    4 N-000049 )
+  (    5 N-000050 )
+  (    6 N-000051 )
+  (    7 N-000039 )
+  (    8 N-000057 )
+  (    9 N-000023 )
+  (   10 N-000024 )
+ )
+ ( /51293CAE $noname  S102 7SEGM {Lib=7SEGM}
+  (    1 N-000047 )
+  (    2 N-000045 )
+  (    3 N-000046 )
+  (    4 N-000049 )
+  (    5 N-000050 )
+  (    6 N-000051 )
+  (    7 N-000039 )
+  (    8 N-000046 )
+  (    9 N-000023 )
+  (   10 N-000024 )
+ )
+ ( /51293C72 $noname  S101 7SEGM {Lib=7SEGM}
+  (    1 N-000047 )
+  (    2 N-000045 )
+  (    3 N-000048 )
+  (    4 N-000049 )
+  (    5 N-000050 )
+  (    6 N-000051 )
+  (    7 N-000039 )
+  (    8 N-000048 )
+  (    9 N-000023 )
+  (   10 N-000024 )
+ )
+ ( /5044BBD4 $noname  P101 CONN_2 {Lib=CONN_2}
+  (    1 +24V )
+  (    2 GND )
+ )
+ ( /5044BBD3 $noname  C103 470p {Lib=C}
+  (    1 N-000026 )
+  (    2 GND )
+ )
+ ( /5044BBD1 $noname  FB101 FILTER {Lib=FILTER}
+  (    1 N-000022 )
+  (    2 N-000025 )
+ )
+ ( /5044BBD0 $noname  C101 100u/63V {Lib=CAPAPOL}
+  (    1 N-000025 )
+  (    2 GND )
+ )
+ ( /5044BBCF $noname  U101 MC34063 {Lib=MC34063}
+  (    1 N-000020 )
+  (    2 N-000021 )
+  (    3 N-000026 )
+  (    4 GND )
+  (    5 N-000027 )
+  (    6 N-000025 )
+  (    7 N-000020 )
+  (    8 N-000020 )
+ )
+ ( /5044BBCE $noname  R102 1 {Lib=R}
+  (    1 N-000025 )
+  (    2 N-000020 )
+ )
+ ( /5044BBCD $noname  L101 220u/1A {Lib=INDUCTOR}
+  (    1 N-000021 )
+  (    2 +5V )
+ )
+ ( /5044BBCC $noname  C102 470u/10V {Lib=CAPAPOL}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /5044BBCA $noname  R105 3k6 {Lib=R}
+  (    1 N-000027 )
+  (    2 +5V )
+ )
+ ( /5044BBC9 $noname  R106 1k2 {Lib=R}
+  (    1 GND )
+  (    2 N-000027 )
+ )
+ ( /5044BBC8 $noname  D102 SK110 {Lib=DIODESCH}
+  (    1 GND )
+  (    2 N-000021 )
+ )
+ ( /5044BBC3 $noname  R104 1 {Lib=R}
+  (    1 N-000025 )
+  (    2 N-000020 )
+ )
+ ( /5044BBC2 $noname  R101 1 {Lib=R}
+  (    1 N-000025 )
+  (    2 N-000020 )
+ )
+ ( /5044BBC1 $noname  D101 transil_38V {Lib=ZENER}
+  (    1 GND )
+  (    2 +24V )
+ )
+ ( /50449509 TQFP32  IC101 ATMEGA88A-A {Lib=ATMEGA88A-A}
+  (    1 /~rts )
+  (    2 /hart_reset )
+  (    3 GND )
+  (    4 +5V )
+  (    5 GND )
+  (    6 +5V )
+  (    7 /xtal1 )
+  (    8 /xtal2 )
+  (    9 /optPWM )
+  (   10 /dis )
+  (   11 ? )
+  (   12 /A )
+  (   13 /B )
+  (   14 /C )
+  (   15 /D )
+  (   16 /E )
+  (   17 /F )
+  (   18 +5V )
+  (   19 ? )
+  (   20 /ref )
+  (   21 GND )
+  (   22 /optLINERX )
+  (   23 /G )
+  (   24 /DP )
+  (   25 /seg0 )
+  (   26 /seg1 )
+  (   27 /seg2 )
+  (   28 /rxd )
+  (   29 /reset )
+  (   30 /rxd )
+  (   31 /txd )
+  (   32 /cd )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C105
+ SM*
+ C?
+ C1-1
+$endlist
+$component C104
+ SM*
+ C?
+ C1-1
+$endlist
+$component R121
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C121
+ SM*
+ C?
+ C1-1
+$endlist
+$component C122
+ SM*
+ C?
+ C1-1
+$endlist
+$component C123
+ SM*
+ C?
+ C1-1
+$endlist
+$component C124
+ SM*
+ C?
+ C1-1
+$endlist
+$component R103
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R113
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R114
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R112
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R111
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R110
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R109
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R108
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R107
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R117
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R116
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R115
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C109
+ SM*
+ C?
+ C1-1
+$endlist
+$component C110
+ SM*
+ C?
+ C1-1
+$endlist
+$component R119
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C120
+ CP*
+ SM*
+$endlist
+$component C111
+ SM*
+ C?
+ C1-1
+$endlist
+$component R120
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C113
+ SM*
+ C?
+ C1-1
+$endlist
+$component C112
+ SM*
+ C?
+ C1-1
+$endlist
+$component C116
+ SM*
+ C?
+ C1-1
+$endlist
+$component C117
+ SM*
+ C?
+ C1-1
+$endlist
+$component C119
+ SM*
+ C?
+ C1-1
+$endlist
+$component C106
+ SM*
+ C?
+ C1-1
+$endlist
+$component C107
+ SM*
+ C?
+ C1-1
+$endlist
+$component C108
+ SM*
+ C?
+ C1-1
+$endlist
+$component R118
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C114
+ CP*
+ SM*
+$endlist
+$component C115
+ SM*
+ C?
+ C1-1
+$endlist
+$component C118
+ SM*
+ C?
+ C1-1
+$endlist
+$component C103
+ SM*
+ C?
+ C1-1
+$endlist
+$component C101
+ CP*
+ SM*
+$endlist
+$component R102
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C102
+ CP*
+ SM*
+$endlist
+$component R105
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R106
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D102
+ D?
+ S*
+$endlist
+$component R104
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R101
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D101
+ D?
+ SO*
+ SM*
+$endlist
+$component IC101
+ 28DIP-ELL600
+ 28dip600
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "GND" "GND"
+ IC101 21
+ U102 21
+ C104 2
+ C123 2
+ D101 1
+ C122 2
+ C115 2
+ IC101 5
+ C105 2
+ C103 2
+ U102 22
+ U102 12
+ C102 2
+ R106 1
+ P101 2
+ D102 1
+ C101 2
+ U101 4
+ R117 1
+ R116 1
+ C124 2
+ U102 19
+ CON101 6
+ C107 2
+ C109 2
+ C110 2
+ U102 9
+ C108 2
+ U102 3
+ C116 2
+ R120 1
+ C111 2
+ U103 4
+ R115 1
+ Q103 S
+ Q102 S
+ C117 2
+ Q101 S
+ IC101 3
+ C119 2
+ C106 2
+ C114 2
+ C118 2
+Net 2 "" ""
+ U103 6
+ U103 2
+ C120 2
+Net 5 "" ""
+ C113 2
+ R120 2
+ U103 3
+ R119 1
+Net 6 "+24V" "+24V"
+ D101 2
+ P101 1
+ C112 2
+ C120 1
+ R103 1
+Net 9 "" ""
+ C116 1
+ U102 13
+Net 11 "/optPWM" "optPWM"
+ IC101 9
+ L102 1
+Net 12 "" ""
+ L102 2
+ C123 1
+ L103 1
+Net 13 "/xtal1" "xtal1"
+ C105 1
+ IC101 7
+ X101 3
+Net 14 "/xtal2" "xtal2"
+ C104 1
+ IC101 8
+ X101 1
+Net 15 "/ref" "ref"
+ C110 1
+ C109 1
+ R121 2
+ IC101 20
+Net 17 "/dis" "dis"
+ U103 8
+ IC101 10
+Net 18 "/E" "E"
+ R111 1
+ IC101 16
+ CON101 1
+Net 19 "/D" "D"
+ CON101 4
+ IC101 15
+ R110 1
+Net 20 "" ""
+ R102 2
+ U101 8
+ U101 7
+ U101 1
+ R104 2
+ R101 2
+Net 21 "" ""
+ L101 1
+ D102 2
+ U101 2
+Net 22 "" ""
+ R103 2
+ FB101 1
+Net 23 "" ""
+ S101 9
+ R112 2
+ S102 9
+ S103 9
+Net 24 "" ""
+ S101 10
+ R113 2
+ S102 10
+ S103 10
+Net 25 "" ""
+ C101 1
+ U101 6
+ R104 1
+ FB101 2
+ R102 1
+ R101 1
+Net 26 "" ""
+ C103 1
+ U101 3
+Net 27 "" ""
+ U101 5
+ R106 2
+ R105 1
+Net 28 "/seg0" "seg0"
+ IC101 25
+ Q101 G
+Net 29 "/A" "A"
+ R107 1
+ IC101 12
+Net 30 "/optLINERX" "optLINERX"
+ C121 1
+ R121 1
+ IC101 22
+Net 31 "/cd" "cd"
+ U102 6
+ IC101 32
+Net 32 "/B" "B"
+ R108 1
+ IC101 13
+Net 33 "/G" "G"
+ R113 1
+ IC101 23
+Net 34 "/C" "C"
+ R109 1
+ IC101 14
+Net 35 "/DP" "DP"
+ R114 1
+ IC101 24
+Net 36 "/seg1" "seg1"
+ Q102 G
+ IC101 26
+Net 37 "/seg2" "seg2"
+ IC101 27
+ Q103 G
+Net 38 "/reset" "reset"
+ CON101 5
+ IC101 29
+Net 39 "" ""
+ S103 7
+ S101 7
+ R107 2
+ S102 7
+Net 40 "/rxd" "rxd"
+ U102 10
+ IC101 28
+ IC101 30
+Net 42 "/hart_reset" "hart_reset"
+ IC101 2
+ U102 5
+Net 43 "/txd" "txd"
+ U102 7
+ IC101 31
+Net 44 "/~rts" "~rts"
+ U102 8
+ IC101 1
+Net 45 "" ""
+ R110 2
+ S102 2
+ S103 2
+ S101 2
+Net 46 "" ""
+ S102 8
+ S102 3
+ Q102 D
+Net 47 "" ""
+ S103 1
+ S101 1
+ R111 2
+ S102 1
+Net 48 "" ""
+ S101 3
+ Q101 D
+ S101 8
+Net 49 "" ""
+ S102 4
+ S101 4
+ S103 4
+ R109 2
+Net 50 "" ""
+ R114 2
+ S101 5
+ S103 5
+ S102 5
+Net 51 "" ""
+ S103 6
+ S102 6
+ S101 6
+ R108 2
+Net 52 "" ""
+ C113 1
+ C124 1
+ L103 2
+ U102 14
+Net 53 "" ""
+ U102 15
+ C117 1
+Net 54 "" ""
+ U102 17
+ C118 1
+Net 55 "" ""
+ U102 1
+ U102 4
+ R118 1
+ U102 24
+ U102 23
+Net 56 "+5V" "+5V"
+ L101 2
+ C102 1
+ R105 2
+ C111 1
+ U103 7
+ R119 2
+ C119 1
+ C106 1
+ C107 1
+ C108 1
+ U102 11
+ C115 1
+ CON101 2
+ C114 1
+ R118 2
+ IC101 18
+ IC101 4
+ U102 18
+ IC101 6
+Net 57 "" ""
+ S103 8
+ S103 3
+ Q103 D
+Net 58 "/F" "F"
+ IC101 17
+ R112 1
+ CON101 3
+Net 59 "" ""
+ C122 1
+ C121 2
+ U102 ~
+ C112 1
+}
+#End
