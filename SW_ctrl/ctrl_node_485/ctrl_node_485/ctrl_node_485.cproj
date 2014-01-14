@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>{72a5cd71-a04a-426e-b70c-386e306cc6a0}</ProjectGuid>
+    <avrdevice>ATmega168A</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>ctrl_node_485</AssemblyName>
+    <Name>ctrl_node_485</Name>
+    <RootNamespace>ctrl_node_485</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>2</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.14.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolOptions xmlns="">
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+        </InterfaceProperties>
+        <InterfaceName>
+        </InterfaceName>
+      </ToolOptions>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolNumber xmlns="">
+      </ToolNumber>
+      <ToolName xmlns="">Simulator</ToolName>
+    </com_atmel_avrdbg_tool_simulator>
+    <preserveEEPROM>True</preserveEEPROM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../FreeRTOS/Include</Value>
+      <Value>../Include</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ctrl_node_485.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\croutine.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\croutine.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\digitalAnalog.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\diskio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\ext_ram.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\ff.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\ffconf.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\FreeRTOS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\freeRTOSBoardDefs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\FreeRTOSConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\hd44780.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\i2cMultiMaster.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\inet.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\lib_crc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\lib_serial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\list.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\mpu_wrappers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\portable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\projdefs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\queue.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\ramfs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\ringBuffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\rtc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\semphr.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\servoPWM.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\socket.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\spi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\StackMacros.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\time.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\timers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\w5100.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\w5200.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\Include\xmodem.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_i2c\i2cMultiMaster.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_serial\lib_serial.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_servo\servoPWM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_spi\spi.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\asctime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\asctime_r.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\asc_store.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\ctime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\ctime_r.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\daylight_seconds.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\difftime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\dst_pointer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\ephemera_common.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\equation_of_time.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\fatfs_time.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\geo_location.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\gmtime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\gmtime_r.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\gm_sidereal.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\isLeap.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\isotime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\isotime_r.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\iso_week_date.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\iso_week_date_r.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\lm_sidereal.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\localtime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\localtime_r.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\mktime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\mk_gmtime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\month_length.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\moon_phase.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\print_lz.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\set_dst.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\set_position.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\set_system_time.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\set_zone.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\solar_declination.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\solar_noon.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\strftime.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\sun_rise.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\sun_set.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\system_tick.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\system_time.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\time.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\tm_store.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\utc_offset.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\week_of_month.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\lib_time\week_of_year.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\list.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\MemMang\heap_1.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\MemMang\heap_2.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\MemMang\heap_3.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\MemMang\heap_4.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\portable\port.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\portable\portmacro.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\queue.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\tasks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\timers.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Include\hw.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FreeRTOS" />
+    <Folder Include="FreeRTOS\Include" />
+    <Folder Include="FreeRTOS\lib_spi" />
+    <Folder Include="FreeRTOS\lib_i2c" />
+    <Folder Include="FreeRTOS\lib_serial" />
+    <Folder Include="FreeRTOS\MemMang" />
+    <Folder Include="FreeRTOS\lib_time" />
+    <Folder Include="FreeRTOS\lib_servo" />
+    <Folder Include="FreeRTOS\portable" />
+    <Folder Include="Include" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeRTOS\portable\readme.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FreeRTOS\readme.txt">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

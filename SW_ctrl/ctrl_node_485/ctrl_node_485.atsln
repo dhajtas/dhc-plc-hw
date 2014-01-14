@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ctrl_node_485", "ctrl_node_485\ctrl_node_485.cproj", "{72A5CD71-A04A-426E-B70C-386E306CC6A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72A5CD71-A04A-426E-B70C-386E306CC6A0}.Debug|AVR.ActiveCfg = Debug|AVR
+		{72A5CD71-A04A-426E-B70C-386E306CC6A0}.Debug|AVR.Build.0 = Debug|AVR
+		{72A5CD71-A04A-426E-B70C-386E306CC6A0}.Release|AVR.ActiveCfg = Release|AVR
+		{72A5CD71-A04A-426E-B70C-386E306CC6A0}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
