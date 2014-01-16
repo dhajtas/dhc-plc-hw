@@ -29,21 +29,6 @@
 #define	MIX_CCW				PC3
 #define MIX_IN				ADC6
 
-#define LED_P				D
-#define LED0				PD2
-#define LED1				PD3
-#define LED2				PD4
-#define LED3				PD5
-
-#define CTRL_P				C
-#define DISP_RST			PC2
-#define HEAT1				PC5
-#define HEAT1_PWM			OC1B
-#define HEAT2				PC6
-#define HEAT2_PWM			OC1A
-#define PHASE				PC4
-#define PHASE_INT			PCINT10
-
 #define KEY_P				B
 #define KEY_COM				PB5
 #define KEY_UP				PB1
