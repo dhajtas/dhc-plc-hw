@@ -9,6 +9,7 @@
 
 #define OW_P				C
 #define OW_DATA				PC4
+#define OW_ONE_BUS			
 
 #define RS_P				D
 #define RS_TX				PD1
