@@ -1,0 +1,1 @@
+PLC module for home automation project - HW part.
